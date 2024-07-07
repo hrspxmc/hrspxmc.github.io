@@ -1,153 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Personal Page</title>
+    <title>Bart Klimowski - Personal Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.7/pico.min.css">
-    <style>
-        :root {
-            --primary: #4a90e2;
-            --primary-hover: #3a7bc8;
-            --background-color: #ffffff;
-            --text-color: #333333;
-            --border-color: #e0e0e0;
-        }
-        body { 
-            display: flex; 
-            background-color: var(--background-color);
-            color: var(--text-color);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-        main { 
-            flex: 1; 
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        aside { 
-            width: 200px;
-            position: sticky;
-            top: 20px;
-            align-self: flex-start;
-            padding: 20px;
-            margin-right: 20px;
-            border-right: 1px solid var(--border-color);
-        }
-        h1, h2, h3 { 
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-        section {
-            margin-bottom: 20px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 20px;
-        }
-        section:last-child {
-            border-bottom: none;
-        }
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-        }
-        .skill-item {
-            background: var(--primary);
-            color: white;
-            padding: 2px 8px;
-            border-radius: 15px;
-            font-size: 0.8em;
-        }
-        .timeline-item {
-            margin-bottom: 15px;
-        }
-        .timeline-item h3 {
-            margin-bottom: 5px;
-        }
-        .timeline-item p {
-            margin: 0;
-            font-style: italic;
-        }
-        ul {
-            margin: 5px 0;
-            padding-left: 20px;
-        }
-        @media (max-width: 768px) {
-            body { flex-direction: column; }
-            aside { 
-                width: 100%;
-                position: static;
-                margin-bottom: 20px;
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <aside>
         <nav>
-            <h3>Contents</h3>
+            <h2>Bartłomiej Klimowski</h2>
             <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about me">About Me</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </aside>
     <main>
-        <h1>John Doe</h1>
-        <p>Welcome to my personal page!</p>
-
+        <h1>Academic Page</h1>
         <section id="about">
-            <h2>About Me</h2>
-            <p>I'm a passionate web developer with a keen interest in creating user-friendly and accessible websites. With over 5 years of experience, I specialize in crafting elegant solutions to complex problems.</p>
-			<a href="./files/A-Primer-in-Social-Simulations-with-Python.pdf" download="newfilename">Download the pdf file</a>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
+            <p>Hi! I'm Bart </p>
+            <p>
+                student of Sociology of Social Intervention at University of Warsaw and data scientist. Complexity
+                Science, Computational Social Science, (Social Network Analysis, Agent Based Modeling, Natural Language
+                Processing)</p>
+            <br>
+            Here you can find my short
+            <a href="./files/A-Primer-in-Social-Simulations-with-Python.pdf" download="yourpdf.pdf"> one page CV </a>
+            and
+            <a href="./files/A-Primer-in-Social-Simulations-with-Python.pdf" download="yourpdf.pdf">long CV</a>
+            (last update: 07.2024).
+            <h4>Skills</h4>
             <div class="skill-list">
-                <span class="skill-item">HTML5</span>
-                <span class="skill-item">CSS3</span>
-                <span class="skill-item">JavaScript</span>
-                <span class="skill-item">React</span>
-                <span class="skill-item">Node.js</span>
-                <span class="skill-item">Python</span>
-                <span class="skill-item">Git</span>
-                <span class="skill-item">Responsive Design</span>
+                <span class="skill-item">R (advanced)</span>
+                <span class="skill-item">Python (advanced)</span>
+                <span class="skill-item">Julia (basic)</span>
+            </div>
+            <h4>Research Interests</h4>
+            <div class="skill-list">
+                <span class="skill-item">Computational Social Science</span>
+                <span class="skill-item">Social Network Analysis</span>
+                <span class="skill-item">Agent Based Modeling</span>
             </div>
         </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="timeline-item">
-                <h3>Senior Web Developer - TechCorp</h3>
-                <p>2018 - Present</p>
-                <ul>
-                    <li>Led the development of the company's main product website</li>
-                    <li>Mentored junior developers and conducted code reviews</li>
-                    <li>Implemented CI/CD pipelines, improving deployment efficiency by 40%</li>
-                </ul>
-            </div>
-            <div class="timeline-item">
-                <h3>Web Developer - StartUp Inc.</h3>
-                <p>2016 - 2018</p>
-                <ul>
-                    <li>Developed and maintained multiple client websites</li>
-                    <li>Collaborated with design team to implement responsive layouts</li>
-                </ul>
-            </div>
+        <section id="publications">
+            <h2>Publications</h2>
         </section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p>University of Technology, 2014 - 2018</p>
+        <section id="resources">
+            <h2>Resources</h2>
         </section>
 
         <section id="contact">
@@ -156,6 +62,12 @@
             <p>LinkedIn: linkedin.com/in/johndoe</p>
             <p>GitHub: github.com/johndoe</p>
         </section>
+
+        <footer>
+            <p>Author: Hege Refsnes</p>
+        </footer>
+
     </main>
 </body>
+
 </html>
